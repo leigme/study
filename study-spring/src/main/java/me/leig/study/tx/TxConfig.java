@@ -1,4 +1,4 @@
-package me.leig.study.config;
+package me.leig.study.tx;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.springframework.context.annotation.Bean;
@@ -39,7 +39,7 @@ import java.beans.PropertyVetoException;
  *
  **/
 @EnableTransactionManagement
-@ComponentScan(value = {"me.leig.study"})
+@ComponentScan(value = {"me.leig.study.dao", "me.leig.study.service"})
 @Configuration
 public class TxConfig {
 
